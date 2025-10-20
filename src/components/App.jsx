@@ -38,7 +38,7 @@ export default function App() {
       <header>
         Blog 
         {user && <button onClick={() => setWriting(true)}>New Article</button>}
-        {user ? <SignIn /> : <SignOut />}
+        {!user ? <SignIn /> : <SignOut />}
       </header>
 
 
